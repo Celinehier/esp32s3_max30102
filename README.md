@@ -1,16 +1,11 @@
 # ESP32 OXIMETER
-Source code of an esp32 + maxim max30102 oximeter and heart rate device. This project was intended to be used as a cheap alternative to commercial oximeters in these hard days fighting corona virus.
-
+Source code of an esp32 + maxim max30102 oximeter and heart rate device.
 This code is based on the great job of [Aromring](https://github.com/aromring/MAX30102_by_RF)
 
-Hoppefully this can be usefull to somone.
 
 ## Espressif IoT Development Framework version
 
-These project was built using esp-idf version: v4.1-beta1-63-g9f024df9e-dirty
-
-[Available here](https://github.com/espressif/esp-idf/tree/release/v4.1)
-
+These project was built using esp-idf version: v5.2.3
 
 ## Connections beetwen esp32 and maxim max30102
 MAX30102 Vin   ->   3v3
@@ -27,6 +22,8 @@ Afer connecting everything up plug you esp32 to the pc and then in the project d
 
 ```
 idf.py fullclean
+
+idf.py build
 
 idf.py flash
 ```
