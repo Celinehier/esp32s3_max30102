@@ -17,9 +17,9 @@ MAX30102 Vin   ->   3v3
 
 MAX30102 GND   ->   GND
 
-MAX30102 SDA   -> GPIO33
+MAX30102 SDA   -> GPIO5
 
-MAX30102 SCL   -> GPIO32
+MAX30102 SCL   -> GPIO6
 
 
 ## Flashing the code

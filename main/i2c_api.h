@@ -12,8 +12,8 @@
 #define ACK_VAL 0x0
 #define NACK_VAL 0x1
 
-#define SDA_PIN 33
-#define SCL_PIN 32
+#define SDA_PIN 5
+#define SCL_PIN 6
 
 
 esp_err_t i2c_init(void);

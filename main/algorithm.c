@@ -7,7 +7,7 @@ double time_array[BUFFER_SIZE];
 #define DEBUG true
 #define MINIMUM_RATIO 0.3
 
-//Apenas inicia o array do tempo.
+//Khởi tạo mảng thời gian 
 void init_time_array()
 {
 	double time = 0;
@@ -56,7 +56,7 @@ void remove_trend_line(int32_t *buffer)
 }
 
 
-//calcula a regressãoi linear. fonte = https://www.statisticshowto.com/probability-and-statistics/regression-analysis/find-a-linear-regression-equation/
+//tính toán hồi quy tuyến tính, nguồn = https://www.statisticshowto.com/probability-and-statistics/regression-analysis/find-a-linear-regression-equation/
 void calculate_linear_regression(double *angular_coef, double *linear_coef, int32_t *data)
 {
 	int64_t sum_of_y = sum_of_elements(data);
@@ -73,7 +73,7 @@ void calculate_linear_regression(double *angular_coef, double *linear_coef, int3
 }
 
 
-/*Esta equação calcula a correlação entre duas amostras
+/*Phương trình này tính toán hệ số tương quan giữa 2 mẫu
  * Sample correlation coefficient
  * https://www.statisticshowto.com/probability-and-statistics/correlation-coefficient-formula/
  */

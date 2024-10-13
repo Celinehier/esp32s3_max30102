@@ -1,4 +1,4 @@
-# Install script for directory: /home/gardin/Documents/dev/esp32_eclipse/max30102_esp32_oximeter
+# Install script for directory: /home/linh/max30102_esp32_oximeter
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -32,9 +32,14 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "TRUE")
 endif()
 
+# Set default install directory permissions.
+if(NOT DEFINED CMAKE_OBJDUMP)
+  set(CMAKE_OBJDUMP "/home/linh/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/xtensa-esp32s3-elf-objdump")
+endif()
+
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/gardin/Documents/dev/esp32_eclipse/max30102_esp32_oximeter/build/esp-idf/cmake_install.cmake")
+  include("/home/linh/max30102_esp32_oximeter/build/esp-idf/cmake_install.cmake")
 
 endif()
 
@@ -46,5 +51,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/gardin/Documents/dev/esp32_eclipse/max30102_esp32_oximeter/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/linh/max30102_esp32_oximeter/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
